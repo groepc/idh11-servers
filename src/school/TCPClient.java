@@ -30,7 +30,7 @@ class TCPClient {
             outToServer.writeBytes(sentence + '\n');
 
             modifiedSentence = inFromServer.readLine();
-
+            System.out.println("FROM SERVER: " + modifiedSentence);
             System.out.println("Server gestop:");
             clientSocket.close();
 
